@@ -1,0 +1,41 @@
+/* Download Attachments */
+ul.download {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+ul.download li a {
+	display:block;
+	padding:5px 0;
+	margin:0 0 5px 0;
+	border-bottom:1px dotted #666;
+
+	font-size:24px;
+
+	position:relative;
+	top:-20px;
+}
+
+ul.download li a img {
+	width:30px;
+	height:100%;
+	padding-right:20px;
+	position:relative;
+	top:5px;
+}
+
+/* Checkout Pages */
+#payment .terms{
+	position:relative;
+	top:-7px;
+	right:0px;
+	text-align:right
+}
+
+#payment .service_agreement{
+	position:relative;
+	top:-27px;
+	right:100px;
+	text-align:right
+}
