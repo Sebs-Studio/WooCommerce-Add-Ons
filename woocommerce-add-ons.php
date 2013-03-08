@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce Add-Ons
 Plugin URI: http://www.sebs-studio.com/wp-plugins/woocommerce-add-ons
 Description: Enables the administrator to tweak, add or filter the possibilites in WooCommerce. Also allows developers to create settings for their own WooCommerce plugins with ease.
-Version: 1.0.0
+Version: 1.0.1
 Author: Sebastien (Sebs Studio)
 Author URI: http://www.sebs-studio.com
 Requires at least: 3.3.1
@@ -14,7 +14,7 @@ Tested up to: 3.5
 define('wc_add_ons_plugin_name', 'WooCommerce Add-Ons');
 
 // Plugin Version.
-define('wc_add_ons_plugin_version', '1.0.0');
+define('wc_add_ons_plugin_version', '1.0.1');
 
 // Plugin Directory.
 define('wc_add_ons_plugin_directory', dirname(plugin_basename(__FILE__)));
@@ -23,7 +23,7 @@ define('wc_add_ons_plugin_directory', dirname(plugin_basename(__FILE__)));
 if(in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins')))){
 
 	/* Localisation */
-	load_plugin_textdomain('wc_add_ons', false, wc_add_ons_plugin_directory.'/languages/');
+	load_plugin_textdomain('wc_add_ons', false, wc_add_ons_plugin_directory.'/lang/');
 
 	// ADMIN
 	add_action('init', 'wc_add_ons_classes', 20);
